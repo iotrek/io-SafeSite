@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/page_heading_layout"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="64dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/page_heading_1"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:fontFamily="@font/open_sans_bold"-->
+<!--            android:text="Profile"-->
+<!--            android:textColor="#131415"-->
+<!--            android:textSize="32sp" />-->
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/page_heading"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:fontFamily="@font/open_sans_bold"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:text="Profile"-->
+        <!--            android:textColor="#131415"-->
+        <!--            android:textSize="32sp" />-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/submit_profile_button"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="@drawable/button_with_round_corner"-->
+        <!--            android:fontFamily="@font/open_sans_semibold"-->
+        <!--            android:text="Save"-->
+        <!--            android:textColor="#ffffff"-->
+        <!--            android:textSize="18sp"/>-->
+
+<!--    </LinearLayout>-->
+
+
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <LinearLayout
+        android:id="@+id/page_heading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="200dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/page_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Profile"
+            android:textColor="#131415"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit_profile_button"
+        android:layout_width="59dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/button_with_round_corner_enabled"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/page_heading_layout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page_heading_layout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/profile_constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout
+                android:id="@+id/contact_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Contact"
+                    android:textColor="#2E2F30"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/country_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="+91"
+                    android:textColor="#131415"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/contact_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:textColor="#131415"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/first_name_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="46dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contact_layout">
+
+
+                <TextView
+                    android:id="@+id/first_name_fix_text"
+                    android:layout_width="84dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:text="First Name"
+                    android:textColor="#2E2F30"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/user_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:inputType="textPersonName"
+                    android:textColor="#131415"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/last_name_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="46dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/first_name_layout">
+
+
+                <TextView
+                    android:id="@+id/last_name_fix_text"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Last Name"
+                    android:textColor="#2E2F30"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/user_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:inputType="textPersonName"
+                    android:textColor="#131415"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/age_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="46dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/last_name_layout">
+
+
+                <TextView
+                    android:id="@+id/age_fix_text"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Age"
+                    android:textColor="#2E2F30"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/user_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:inputType="number"
+                    android:textColor="#131415"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/gender_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="46dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/age_layout">
+
+
+                <TextView
+                    android:id="@+id/gender_fix_text"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Gender"
+                    android:textColor="#2E2F30"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_gender_dropdown"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/address_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="46dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gender_layout">
+
+
+                <TextView
+                    android:id="@+id/address_fix_text"
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Address"
+                    android:textColor="#2E2F30"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/address_vertical_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/address_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:hint="Address 1"
+                        android:inputType="textPostalAddress"
+                        android:textColor="#131415"
+                        android:textSize="16sp" />
+
+
+                    <EditText
+                        android:id="@+id/address_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:hint="Address 2"
+                        android:inputType="textPostalAddress"
+                        android:textColor="#131415"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/address_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:hint="City"
+                        android:inputType="textPostalAddress"
+                        android:textColor="#131415"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/address_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:hint="State"
+                        android:inputType="textPostalAddress"
+                        android:textColor="#131415"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/address_pin_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:hint="Area pin code"
+                        android:inputType="number"
+                        android:textColor="#131415"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/home_quarantine_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="25dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_layout">
+
+
+                <TextView
+                    android:id="@+id/quarantine_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="Home Quarantine"
+                    android:textColor="#131415"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/quarantine_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:text="" />
+
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/home_quarantine_text"-->
+                <!--                android:layout_width="76dp"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="9dp"-->
+                <!--                android:layout_weight="1"-->
+                <!--                android:fontFamily="@font/open_sans"-->
+                <!--                android:text="Address"-->
+                <!--                android:textColor="#2E2F30"-->
+                <!--                android:textSize="16sp" />-->
+            </LinearLayout>
+
+<!--            <TextView-->
+<!--                android:id="@+id/quarantine_text"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:fontFamily="@font/open_sans_bold"-->
+<!--                android:text="Home Quarantine"-->
+<!--                android:textColor="#131415"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/address_layout" />-->
+
+
+            <LinearLayout
+                android:id="@+id/quarantine_input_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_quarantine_layout">
+
+                <TextView
+                    android:id="@+id/quarantine_fix_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Since"
+                    android:textColor="#2e2f30"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/quarantine_calender_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/icon_calender_xhdpi"
+                    android:ems="10"
+                    android:hint="DD/MM/YY"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <!--        <LinearLayout-->
+            <!--            android:id="@+id/city_serach_layout"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_marginStart="20dp"-->
+            <!--            android:layout_marginTop="27dp"-->
+            <!--            android:layout_marginEnd="20dp"-->
+            <!--            android:orientation="horizontal"-->
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/travel_history_text">-->
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/city_search_bar"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:drawableLeft="@drawable/search_icon_xhdpi"-->
+            <!--                android:drawableRight="@android:drawable/ic_input_add"-->
+            <!--                android:ems="10"-->
+            <!--                android:inputType="textPostalAddress" />-->
+
+            <!--            &lt;!&ndash;            <Button&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:id="@+id/button2"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:background="@drawable/button_with_round_corner_blue"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:fontFamily="@font/open_sans_semibold"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:text="+ Add"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:textColor="#FFFFFF"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:textSize="12sp" />&ndash;&gt;-->
+
+
+            <!--            &lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:id="@+id/city_add"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:layout_marginTop="10dp"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:background="@drawable/button_with_round_corner_blue"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                android:orientation="horizontal">&ndash;&gt;-->
+
+
+            <!--            &lt;!&ndash;                <TextView&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:id="@+id/city_add_plus"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:layout_weight="1"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:fontFamily="@font/open_sans"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:text="+"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:textColor="#FFFFFF"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:textSize="16sp" />&ndash;&gt;-->
+
+
+            <!--            &lt;!&ndash;                <TextView&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:id="@+id/city_add_text"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:layout_weight="1"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:fontFamily="@font/open_sans"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:text="Add"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:textColor="#FFFFFF"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:textSize="16sp" />&ndash;&gt;-->
+
+
+            <!--            &lt;!&ndash;                <TextView&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:id="@+id/city_add_plus"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:layout_weight="1"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:fontFamily="@font/open_sans"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:text="Contact"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:textColor="#2E2F30"&ndash;&gt;-->
+            <!--            &lt;!&ndash;                    android:textSize="16sp" />&ndash;&gt;-->
+            <!--            &lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
+            <!--        </LinearLayout>-->
+
+
+            <!--        <LinearLayout-->
+            <!--            android:id="@+id/city_names_layout"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginStart="20dp"-->
+            <!--            android:layout_marginTop="14dp"-->
+            <!--            android:layout_marginEnd="20dp"-->
+            <!--            android:orientation="vertical"-->
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/city_serach_layout">-->
+
+            <!--        </LinearLayout>-->
+
+
+            <CalendarView
+                android:id="@+id/calendar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quarantine_input_layout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

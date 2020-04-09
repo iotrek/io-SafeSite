@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "576349990133",
+    "firebase_url": "https://io-safesite.firebaseio.com",
+    "project_id": "io-safesite",
+    "storage_bucket": "io-safesite.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576349990133:android:8c26fc52af133862f229bc",
+        "android_client_info": {
+          "package_name": "com.iosite.io_safesite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576349990133-pftkucc2g5mmb0qo9u21f954iqmi7656.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0VykgZugYdt0JuO0_ufKPc5C-W-2ejSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576349990133-pftkucc2g5mmb0qo9u21f954iqmi7656.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

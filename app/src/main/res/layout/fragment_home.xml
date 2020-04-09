@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wash_hand_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/wash_your_hands"
+            android:layout_width="218dp"
+            android:layout_height="218dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/page_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:text="Thank You!"
+            android:textColor="#131415"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wash_your_hands" />
+
+        <TextView
+            android:id="@+id/page_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="19dp"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="For caring about India and her safety Feel proud to be an Indian"
+            android:textColor="#2e2f30"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/page_heading" />
+
+        <TextView
+            android:id="@+id/page_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Wash your hands regularily Practise social distancing"
+            android:textColor="#8985a1"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/app_functional_layout"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:background="#e1e9ef"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/asset_directions"
+            android:layout_width="159dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="29dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_asset_directions" />
+
+        <ImageView
+            android:id="@+id/icon_buld"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="29dp"
+            app:layout_constraintStart_toEndOf="@+id/asset_directions"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_bulb_xhdpi" />
+
+        <TextView
+            android:id="@+id/directions_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Please ensure your app is functional when you step outside"
+            android:textColor="#2e2f30"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/asset_directions"
+            app:layout_constraintTop_toBottomOf="@+id/icon_buld" />
+
+        <TextView
+            android:id="@+id/functional_understood_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:text="Understood"
+            android:textColor="#017aff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/directions_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/new_possible_cases_layout"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:background="#e1e9ef"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/asset_download"
+            android:layout_width="159dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="29dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_asset_download" />
+
+        <ImageView
+            android:id="@+id/icon_buld_1"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="29dp"
+            app:layout_constraintStart_toEndOf="@+id/asset_download"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_bulb_xhdpi" />
+
+        <TextView
+            android:id="@+id/possible_cases_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Connect to internet to check on new cases in your locality"
+            android:textColor="#2e2f30"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/asset_download"
+            app:layout_constraintTop_toBottomOf="@+id/icon_buld_1" />
+
+        <TextView
+            android:id="@+id/new_understood_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:text="Understood"
+            android:textColor="#017aff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/possible_cases_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_page_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/page_tic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="29dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/green_tic_xhdpi" />
+
+        <TextView
+            android:id="@+id/uploadFileIcon_ids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="16dp"
+            android:background="#4CAF50"
+            android:gravity="center"
+            android:text="Upload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/page_active_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:text="App is active"
+            android:textColor="#131415"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/page_tic" />
+
+        <LinearLayout
+            android:id="@+id/last_update_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/page_active_heading">
+
+
+            <ImageView
+                android:id="@+id/people_tic_image"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/icon_people" />
+
+            <TextView
+                android:id="@+id/last_update_fix_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="Last Updated : "
+                android:textColor="#2E2F30"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/last_update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="5:30 PM"
+                android:textColor="#131415"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/risk_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/last_update_layout">
+
+            <TextView
+                android:id="@+id/risk_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:text="Risk Analysis : "
+                android:textColor="#2e2f30"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/risk_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="LOW"
+                android:textColor="#26b72d"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/number_of_quarantine_days_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/risk_layout">
+
+            <TextView
+                android:id="@+id/number_of_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="12"
+                android:textColor="#2e2f30"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/number_of_days_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans"
+                android:textColor="#2e2f30"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/know_more_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Know more"
+            android:textColor="#017aff"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/number_of_quarantine_days_layout" />
+
+        <TextView
+            android:id="@+id/qurantine_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="You are in home quarantine!"
+            android:textColor="#2e2f30"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_cinema_image" />
+
+        <ImageView
+            android:id="@+id/home_cinema_image"
+            android:layout_width="130dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/know_more_text"
+            app:srcCompat="@drawable/ic_asset_home_cinema" />
+
+        <LinearLayout
+            android:id="@+id/qurantine_remaining_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qurantine_text_1">
+
+            <TextView
+                android:id="@+id/remaining_days_value"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="2"
+                android:textColor="#2e2f30"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/remaining_days_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_bold"
+                android:text=" more days to go"
+                android:textColor="#2e2f30"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/user_safe_laout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/know_more_text">
+
+
+            <ImageView
+                android:id="@+id/standing_wash"
+                android:layout_width="95dp"
+                android:layout_height="146dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/standing_wash_hand_xhdpi" />
+
+            <ImageView
+                android:id="@+id/user_safe_bulb"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="36dp"
+                app:layout_constraintStart_toEndOf="@+id/standing_wash"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_bulb_xhdpi" />
+
+            <TextView
+                android:id="@+id/moreInfo_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="20dp"
+                android:text="Know more about COVID-19 from WHO sourced articles"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/standing_wash"
+                app:layout_constraintTop_toBottomOf="@+id/user_safe_bulb" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

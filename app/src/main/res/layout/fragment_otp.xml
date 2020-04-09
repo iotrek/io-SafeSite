@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/enter_otp_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="29dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:text="@string/enter_otp"
+        android:textColor="#131415"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wrong_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/wrong_number"
+        android:textColor="#0078E2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile_number_layout" />
+
+    <Button
+        android:id="@+id/submit_otp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/button_with_round_corner"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/proceed"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resend_otp" />
+
+    <TextView
+        android:id="@+id/page_footer_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="29dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:text="@string/otp_page_footer_text"
+        android:textColor="#2E2F30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/page_footer_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/page_footer_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?android:attr/alertDialogIcon" />
+
+    <TextView
+        android:id="@+id/resend_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Resend OTP"
+        android:textColor="#0078E2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_timer_layout" />
+
+    <LinearLayout
+        android:id="@+id/contact_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_entry_layout">
+
+        <ImageView
+            android:id="@+id/invalid_otp_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="?android:attr/alertDialogIcon"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/invalid_otp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:text="OTP is invalid"
+            android:textColor="#FF3B30"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otp_timer_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_layout">
+
+        <TextView
+            android:id="@+id/otp_expire_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:text="Your OTP will expire in"
+            android:textColor="#2E2F30"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/otp_expire_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:textColor="#2E2F30"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mobile_number_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_otp_text">
+
+        <TextView
+            android:id="@+id/india_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="+91"
+            android:textColor="#131415"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/user_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textColor="#131415"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otp_entry_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrong_number">
+
+        <EditText
+            android:id="@+id/otp_1"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/otp_2"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="11dp"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/otp_3"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="11dp"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/otp_4"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="11dp"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/otp_5"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="11dp"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/otp_6"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="11dp"
+            android:layout_weight="1"
+            android:maxLength="1"
+            android:gravity="center"
+            android:inputType="number" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

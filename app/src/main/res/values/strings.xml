@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">io-SafeSite</string>
+
+    <string-array name="age_group_array">
+        <item>0-10</item>s
+        <item>10-20</item>
+        <item>20-30</item>
+        <item>30-40</item>
+        <item>40-50</item>
+        <item>50-60</item>
+        <item>60-70</item>
+        <item>70-80</item>
+        <item>80-90</item>
+        <item>90-100</item>
+    </string-array>
+
+    <string name="age_group_prompt">Select Age Group</string>
+
+    <string-array name="covid19_status_array">
+        <item>Safe</item>
+        <item>Quarantine</item>
+        <item>Covid-19 Positive</item>
+    </string-array>
+
+    <string-array name="gender_options_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="covid19_status_prompt">Select Covid-19 Status</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="country_code">+91</string>
+    <string name="wrong_number">Wrong Number?</string>
+    <string name="proceed">Proceed</string>
+    <string name="otp_page_footer_text">If you are setting up for your family or friend, Enter their Number and not yours.</string>
+<!--    <string name="otp_page_footer_text">If you are setting up for your family or friend, Enter their Number and not yours.</string>-->
+
+
+    <string name="beacon_uuid_simulator">2f234454-cf6d-4a0f-adf2-f4911ba9ffa6</string>
+    <string name="beacon_minor_simulator">ABCD</string>
+    <string name="beacon_major_simulator">1234</string>
+<!--    <string name="manufacturer_id">1234</string>-->
+</resources>
